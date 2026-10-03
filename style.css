@@ -310,7 +310,7 @@ textarea {
 
 .hero-image-area .hero-profile-img {
     width: 130%;
-    height: 130%;
+    height: 150%;
 
     object-fit: contain;
     object-position: center;
