@@ -254,44 +254,55 @@ textarea {
     justify-content: center;
 }
 
-/* Circular background */
-.circle-bg {
+
+/* Blue circular background */
+
+.hero-image-area .circle-bg {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     background: #dcecff;
+
     position: absolute;
+
     z-index: 1;
 }
 
-/* Profile image */
-.hero-profile {
+
+/* Profile image wrapper */
+
+.hero-image-area .profile-circle {
     width: 400px;
     height: 400px;
 
     border-radius: 50%;
 
-    object-fit: contain;
-    object-position: center;
+    overflow: hidden;
 
     position: relative;
+
     top: 10px;
+
     z-index: 3;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Profile image */
-.hero-profile {
+
+/* Hero profile image ONLY */
+
+.hero-image-area .hero-profile-img {
     width: 100%;
     height: 100%;
-    border-radius: 0;
 
     object-fit: contain;
     object-position: center;
 
     display: block;
 }
+
 
 /* ==============================
    SOFTWARE ICONS
@@ -300,14 +311,19 @@ textarea {
 .software-icon {
     position: absolute;
     z-index: 5;
+
     width: 65px;
     height: 65px;
+
     border-radius: 15px;
+
     display: grid;
     place-items: center;
+
     color: white;
     font-weight: 700;
     font-size: 25px;
+
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -345,7 +361,9 @@ textarea {
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: 600;
+
     position: absolute;
+
     z-index: 7;
 }
 
@@ -358,7 +376,9 @@ textarea {
 .right-hand {
     right: -15px;
     bottom: 80px;
+
     transform: rotate(-8deg);
+
     font-size: 22px;
 }
 
@@ -400,15 +420,20 @@ textarea {
 .about-grid {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
+
     align-items: center;
+
     gap: 80px;
 }
 
 .about-image {
     position: relative;
+
     width: 380px;
     height: 430px;
+
     margin: auto;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,16 +441,21 @@ textarea {
 
 .about-circle {
     position: absolute;
+
     width: 330px;
     height: 330px;
+
     background: #e4f0ff;
+
     border-radius: 50%;
+
     top: 30px;
     left: 25px;
 }
 
 .about-image img {
     position: relative;
+
     z-index: 2;
 
     width: 330px;
@@ -452,13 +482,17 @@ textarea {
 
 .about-points {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 15px;
 }
 
 .about-points div {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 }
 
@@ -468,9 +502,13 @@ textarea {
 
 .journey {
     margin-top: 70px;
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 60px;
+
     align-items: center;
 }
 
@@ -484,25 +522,33 @@ textarea {
 
 .stats {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 15px;
 }
 
 .stat-card {
     background: #f7faff;
+
     padding: 22px 10px;
+
     text-align: center;
+
     border-radius: 15px;
 }
 
 .stat-card strong {
     display: block;
+
     color: #1265df;
+
     font-size: 25px;
 }
 
 .stat-card span {
     font-size: 11px;
+
     color: #65738a;
 }
 
@@ -517,14 +563,19 @@ textarea {
 
 .resume-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 70px;
 }
 
 .resume-title {
     display: flex;
+
     align-items: center;
+
     gap: 12px;
+
     margin-bottom: 30px;
 }
 
@@ -534,40 +585,53 @@ textarea {
 
 .timeline {
     border-left: 2px solid #d8e7fa;
+
     padding-left: 28px;
 }
 
 .timeline-item {
     position: relative;
+
     padding-bottom: 35px;
 }
 
 .timeline-dot {
     position: absolute;
+
     width: 12px;
     height: 12px;
+
     background: #1265df;
+
     border-radius: 50%;
+
     left: -35px;
     top: 6px;
+
     border: 3px solid #f7faff;
+
     box-shadow: 0 0 0 2px #1265df;
 }
 
 .timeline-item h4 {
     font-size: 17px;
+
     margin-bottom: 5px;
 }
 
 .timeline-date {
     color: #1265df;
+
     font-size: 12px;
+
     font-weight: 700;
 }
 
 .timeline-item p {
     color: #68778d;
+
     font-size: 14px;
+
     margin-top: 8px;
 }
 
@@ -577,16 +641,23 @@ textarea {
 
 .skills {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 10px;
 }
 
 .skills span {
     background: white;
+
     border: 1px solid #dce8f7;
+
     padding: 8px 15px;
+
     border-radius: 50px;
+
     font-size: 13px;
+
     color: #34506f;
 }
 
@@ -601,33 +672,44 @@ textarea {
 
 .portfolio-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 22px;
 }
 
 .project-card {
     background: white;
+
     border-radius: 15px;
+
     overflow: hidden;
+
     box-shadow: 0 10px 35px rgba(23, 65, 110, 0.08);
+
     transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-7px);
+
     box-shadow: 0 20px 45px rgba(23, 65, 110, 0.14);
 }
 
 .project-image {
     height: 230px;
+
     position: relative;
+
     overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     transition: 0.4s;
 }
 
@@ -637,11 +719,17 @@ textarea {
 
 .project-overlay {
     position: absolute;
+
     inset: 0;
+
     background: rgba(18, 101, 223, 0.75);
+
     display: grid;
+
     place-items: center;
+
     opacity: 0;
+
     transition: 0.3s;
 }
 
@@ -652,10 +740,15 @@ textarea {
 .project-link {
     width: 50px;
     height: 50px;
+
     background: white;
+
     color: #1265df;
+
     border-radius: 50%;
+
     display: grid;
+
     place-items: center;
 }
 
@@ -665,36 +758,51 @@ textarea {
 
 .project-info span {
     font-size: 11px;
+
     color: #1265df;
+
     font-weight: 700;
+
     text-transform: uppercase;
+
     letter-spacing: 1px;
 }
 
 .project-info h3 {
     font-size: 17px;
+
     margin-top: 5px;
 }
 
 .portfolio-button {
     text-align: center;
+
     margin-top: 40px;
 }
 
 .outline-button {
     display: inline-flex;
+
     gap: 10px;
+
     align-items: center;
+
     padding: 13px 25px;
+
     border: 1px solid #1265df;
+
     color: #1265df;
+
     border-radius: 50px;
+
     font-weight: 600;
+
     transition: 0.3s;
 }
 
 .outline-button:hover {
     background: #1265df;
+
     color: white;
 }
 
@@ -709,60 +817,81 @@ textarea {
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: 0.8fr 1.2fr;
+
     gap: 70px;
+
     align-items: start;
 }
 
 .contact-info h3 {
     font-size: 30px;
+
     margin-bottom: 15px;
 }
 
 .contact-info > p {
     color: #65738a;
+
     margin-bottom: 35px;
 }
 
 .contact-item {
     display: flex;
+
     gap: 15px;
+
     align-items: center;
+
     margin-bottom: 25px;
 }
 
 .contact-icon {
     width: 48px;
     height: 48px;
+
     border-radius: 50%;
+
     background: #e4f0ff;
+
     color: #1265df;
+
     display: grid;
+
     place-items: center;
 }
 
 .contact-item span {
     display: block;
+
     font-size: 11px;
+
     color: #7a8799;
 }
 
 .contact-item a,
 .contact-item p {
     font-weight: 600;
+
     font-size: 14px;
 }
 
 .contact-form-box {
     background: white;
+
     padding: 35px;
+
     border-radius: 20px;
+
     box-shadow: 0 15px 45px rgba(20, 70, 120, 0.08);
 }
 
 .form-row {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 18px;
 }
 
@@ -772,25 +901,35 @@ textarea {
 
 .form-group label {
     display: block;
+
     font-size: 12px;
+
     font-weight: 600;
+
     margin-bottom: 7px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
+
     border: 1px solid #dbe5f1;
+
     border-radius: 10px;
+
     padding: 13px 15px;
+
     outline: none;
+
     resize: vertical;
+
     transition: 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #1265df;
+
     box-shadow: 0 0 0 3px rgba(18, 101, 223, 0.08);
 }
 
@@ -801,20 +940,27 @@ textarea {
 
 .footer {
     background: #0c2344;
+
     color: white;
+
     padding: 30px 0;
 }
 
 .footer-content {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 20px;
 }
 
 .footer-logo {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 }
 
@@ -825,32 +971,42 @@ textarea {
 
 .footer-logo strong {
     font-size: 14px;
+
     letter-spacing: 2px;
 }
 
 .footer-logo small {
     font-size: 8px;
+
     letter-spacing: 2px;
+
     color: #9eacc1;
 }
 
 .footer-content p {
     color: #a9b5c5;
+
     font-size: 12px;
 }
 
 .footer-social {
     display: flex;
+
     gap: 10px;
 }
 
 .footer-social a {
     width: 35px;
     height: 35px;
+
     border: 1px solid rgba(255,255,255,0.2);
+
     border-radius: 50%;
+
     display: grid;
+
     place-items: center;
+
     transition: 0.3s;
 }
 
@@ -865,24 +1021,31 @@ textarea {
 
 .hero-bg-shape {
     position: absolute;
+
     background: #e9f3ff;
+
     opacity: 0.6;
+
     z-index: 0;
 }
 
 .shape-one {
     width: 220px;
     height: 220px;
+
     right: -100px;
     top: 100px;
+
     transform: rotate(45deg);
 }
 
 .shape-two {
     width: 170px;
     height: 170px;
+
     left: -90px;
     bottom: 50px;
+
     transform: rotate(45deg);
 }
 
@@ -899,11 +1062,13 @@ textarea {
 
     .hero-grid {
         grid-template-columns: 1fr;
+
         text-align: center;
     }
 
     .hero-description {
         margin-left: auto;
+
         margin-right: auto;
     }
 
@@ -943,17 +1108,26 @@ textarea {
 
     .nav-menu {
         position: absolute;
+
         top: 75px;
         left: 5%;
+
         width: 90%;
+
         background: white;
+
         padding: 25px;
+
         border-radius: 15px;
+
         box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 
         display: none;
+
         flex-direction: column;
+
         align-items: flex-start;
+
         gap: 15px;
     }
 
@@ -981,20 +1155,24 @@ textarea {
         min-height: 420px;
     }
 
-    /* Mobile hero circle */
-    .hero-profile {
+
+    /* Mobile HERO image only */
+
+    .hero-image-area .profile-circle {
         width: 330px;
         height: 330px;
     }
 
-    .circle-bg {
+    .hero-image-area .circle-bg {
         width: 330px;
         height: 330px;
     }
+
 
     .software-icon {
         width: 50px;
         height: 50px;
+
         font-size: 18px;
     }
 
@@ -1008,11 +1186,13 @@ textarea {
 
     .figma {
         left: 15px;
+
         bottom: 90px;
     }
 
     .indesign {
         right: 15px;
+
         bottom: 90px;
     }
 
@@ -1023,6 +1203,7 @@ textarea {
     .resume-grid,
     .journey {
         grid-template-columns: 1fr;
+
         gap: 40px;
     }
 
@@ -1036,10 +1217,13 @@ textarea {
 
     .footer-content {
         flex-direction: column;
+
         text-align: center;
     }
 
-    /* About image mobile */
+
+    /* About image */
+
     .about-image {
         width: 330px;
         height: 360px;
@@ -1048,6 +1232,7 @@ textarea {
     .about-circle {
         width: 300px;
         height: 300px;
+
         top: 20px;
         left: 15px;
     }
@@ -1079,6 +1264,7 @@ textarea {
 
     .hello {
         font-size: 13px;
+
         letter-spacing: 5px;
     }
 
@@ -1086,16 +1272,19 @@ textarea {
         min-height: 370px;
     }
 
-    /* Small mobile hero circle */
-    .hero-profile {
+
+    /* Small mobile HERO image only */
+
+    .hero-image-area .profile-circle {
         width: 290px;
         height: 290px;
     }
 
-    .circle-bg {
+    .hero-image-area .circle-bg {
         width: 290px;
         height: 290px;
     }
+
 
     .about-points {
         grid-template-columns: 1fr;
@@ -1109,7 +1298,9 @@ textarea {
         padding: 22px;
     }
 
-    /* Small mobile about image */
+
+    /* Small mobile ABOUT image */
+
     .about-image {
         width: 290px;
         height: 320px;
@@ -1118,6 +1309,7 @@ textarea {
     .about-circle {
         width: 260px;
         height: 260px;
+
         top: 20px;
         left: 15px;
     }
