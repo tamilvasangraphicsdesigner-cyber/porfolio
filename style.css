@@ -243,7 +243,7 @@ textarea {
 
 
 /* ==============================
-   HERO PROFILE IMAGE
+   HERO IMAGE + CIRCLE
 ================================= */
 
 .hero-image-area {
@@ -271,7 +271,7 @@ textarea {
 
     border-radius: 50%;
 
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 
     position: relative;
@@ -280,7 +280,6 @@ textarea {
 
     display: block;
 }
-
 
 /* ==============================
    SOFTWARE ICONS
