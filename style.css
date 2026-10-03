@@ -293,7 +293,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(30px, -50px);
+    transform: translate(0px, -50px);
 
 }
 
