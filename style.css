@@ -274,7 +274,7 @@ textarea {
     left: 50%;
 
     /* Circle position */
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -20%);
 
     z-index: 1;
 }
