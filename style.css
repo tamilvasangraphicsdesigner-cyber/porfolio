@@ -301,8 +301,8 @@ textarea {
 /* HERO IMAGE ONLY */
 
 .hero-image-area .hero-profile-img {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
 
     object-fit: contain;
 
