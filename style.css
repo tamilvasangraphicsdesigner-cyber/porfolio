@@ -241,6 +241,11 @@ textarea {
     transform: translateY(-3px);
 }
 
+
+/* ==============================
+   HERO PROFILE IMAGE
+================================= */
+
 .hero-image-area {
     min-height: 550px;
     position: relative;
@@ -249,21 +254,36 @@ textarea {
     justify-content: center;
 }
 
+/* Circular background */
 .circle-bg {
-    width: 390px;
-    height: 390px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background: #dcecff;
     position: absolute;
+    z-index: 1;
 }
 
+/* Profile image */
 .hero-profile {
-    width: 450px;
-    max-height: 550px;
-    object-fit: contain;
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center;
+
     position: relative;
     z-index: 3;
+
+    display: block;
 }
+
+
+/* ==============================
+   SOFTWARE ICONS
+================================= */
 
 .software-icon {
     position: absolute;
@@ -302,6 +322,11 @@ textarea {
     right: 50px;
     bottom: 145px;
 }
+
+
+/* ==============================
+   HAND TEXT
+================================= */
 
 .hand-text {
     color: #1265df;
@@ -369,8 +394,12 @@ textarea {
 
 .about-image {
     position: relative;
-    max-width: 380px;
+    width: 380px;
+    height: 430px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-circle {
@@ -386,8 +415,16 @@ textarea {
 .about-image img {
     position: relative;
     z-index: 2;
-    height: 430px;
-    object-fit: contain;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
 }
 
 .about-intro {
@@ -839,7 +876,7 @@ textarea {
 
 
 /* ==============================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ================================= */
 
 @media (max-width: 1000px) {
@@ -881,6 +918,10 @@ textarea {
     }
 }
 
+
+/* ==============================
+   RESPONSIVE - MOBILE
+================================= */
 
 @media (max-width: 768px) {
 
@@ -928,13 +969,15 @@ textarea {
         min-height: 420px;
     }
 
+    /* Mobile hero circle */
     .hero-profile {
         width: 330px;
+        height: 330px;
     }
 
     .circle-bg {
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 330px;
     }
 
     .software-icon {
@@ -983,8 +1026,30 @@ textarea {
         flex-direction: column;
         text-align: center;
     }
+
+    /* About image mobile */
+    .about-image {
+        width: 330px;
+        height: 360px;
+    }
+
+    .about-circle {
+        width: 300px;
+        height: 300px;
+        top: 20px;
+        left: 15px;
+    }
+
+    .about-image img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
+
+/* ==============================
+   RESPONSIVE - SMALL MOBILE
+================================= */
 
 @media (max-width: 500px) {
 
@@ -1009,13 +1074,15 @@ textarea {
         min-height: 370px;
     }
 
+    /* Small mobile hero circle */
     .hero-profile {
         width: 290px;
+        height: 290px;
     }
 
     .circle-bg {
-        width: 260px;
-        height: 260px;
+        width: 290px;
+        height: 290px;
     }
 
     .about-points {
@@ -1030,4 +1097,21 @@ textarea {
         padding: 22px;
     }
 
+    /* Small mobile about image */
+    .about-image {
+        width: 290px;
+        height: 320px;
+    }
+
+    .about-circle {
+        width: 260px;
+        height: 260px;
+        top: 20px;
+        left: 15px;
+    }
+
+    .about-image img {
+        width: 260px;
+        height: 260px;
+    }
 }
