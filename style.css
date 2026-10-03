@@ -271,7 +271,7 @@ textarea {
 
     border-radius: 50%;
 
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 
     position: relative;
