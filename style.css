@@ -169,7 +169,7 @@ textarea {
 
 .hero {
     min-height: 100vh;
-    padding-top: 140px;
+    padding-top: 0px;
     display: flex;
     align-items: center;
     position: relative;
