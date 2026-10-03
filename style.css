@@ -264,6 +264,7 @@ textarea {
     background: #dcecff;
 
     position: absolute;
+   transform: translateY(-25px);
 
     z-index: 1;
 }
