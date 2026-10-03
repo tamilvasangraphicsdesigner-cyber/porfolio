@@ -264,19 +264,21 @@ textarea {
     z-index: 1;
 }
 
-/* Profile image circle wrapper */
-.profile-circle {
+/* Profile image */
+.hero-profile {
     width: 400px;
     height: 400px;
+
     border-radius: 50%;
-    overflow: hidden;
+
+    object-fit: contain;
+    object-position: center;
+
     position: relative;
     top: 10px;
     z-index: 3;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
 /* Profile image */
