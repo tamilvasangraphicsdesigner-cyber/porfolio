@@ -267,9 +267,9 @@ textarea {
     background: #dcecff;
 
     position: absolute;
-
-    transform: translateY(-25px);
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
@@ -286,14 +286,14 @@ textarea {
 
     position: relative;
 
-    top: 20px;
+    top: 30px;
 
     z-index: 3;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-10px, -40px);
+    transform: translate(-10px, -10px);
 
 }
 
