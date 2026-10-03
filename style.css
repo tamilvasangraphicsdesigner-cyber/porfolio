@@ -250,69 +250,75 @@ textarea {
 .hero-image-area {
     min-height: 550px;
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-/* Blue Circle */
+/* ==============================
+   BLUE CIRCLE
+================================= */
 
 .hero-image-area .circle-bg {
     width: 350px;
     height: 350px;
 
     border-radius: 50%;
-
     background: #dcecff;
 
     position: absolute;
+
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -30%);
+
+    /* Circle position */
+    transform: translate(-50%, -50%);
+
     z-index: 1;
 }
 
 
-/* Image Circle Wrapper */
+/* ==============================
+   PROFILE IMAGE CIRCLE
+================================= */
 
 .hero-image-area .profile-circle {
     width: 350px;
     height: 350px;
 
     border-radius: 50%;
-
     overflow: hidden;
 
     position: relative;
-
-    top: 30px;
 
     z-index: 3;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-10px, -30px);
 
+    /* Image circle position */
+    transform: translate(0, 0);
 }
 
 
-/* HERO IMAGE ONLY */
+/* ==============================
+   PROFILE IMAGE ONLY
+================================= */
 
 .hero-image-area .hero-profile-img {
     width: 110%;
     height: 110%;
 
     object-fit: contain;
-
     object-position: center;
 
     border-radius: 0;
 
     display: block;
 }
-
 
 /* ==============================
    SOFTWARE ICONS
