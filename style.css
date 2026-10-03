@@ -293,6 +293,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(30px, -20px);
+
 }
 
 
